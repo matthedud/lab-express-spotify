@@ -1,0 +1,14 @@
+<section>
+<h1>Albums for: {{artist.name}}</h1>
+    {{#each albums}}
+    <article>
+        <picture >
+            <img src={{this.imageURL}} alt="">
+        </picture>
+        <div class="groupe-text">
+            <h2>{{this.name}}</h2>
+            <a href="/tracks/{{this.id}}">View Tracks</a>
+        </div>
+    </article>
+    {{/each}}
+</section>
